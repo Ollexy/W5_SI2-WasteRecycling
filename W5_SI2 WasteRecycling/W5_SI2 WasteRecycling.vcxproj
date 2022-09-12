@@ -132,6 +132,7 @@
     <ClInclude Include="DustbinContentError.h" />
     <ClInclude Include="DustbinTests.h" />
     <ClInclude Include="Garbage.h" />
+    <ClInclude Include="MetalGarbage.h" />
     <ClInclude Include="PaperGarbage.h" />
     <ClInclude Include="PlasticGarbage.h" />
   </ItemGroup>
@@ -141,6 +142,7 @@
     <ClCompile Include="DustbinContentError.cpp" />
     <ClCompile Include="DustbinTests.cpp" />
     <ClCompile Include="Garbage.cpp" />
+    <ClCompile Include="MetalGarbage.cpp" />
     <ClCompile Include="PaperGarbage.cpp" />
     <ClCompile Include="PlasticGarbage.cpp" />
   </ItemGroup>

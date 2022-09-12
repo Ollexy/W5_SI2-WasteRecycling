@@ -1,23 +1,23 @@
 #pragma once
-#include "Garbage.h"
+#include <string>
 #include "PaperGarbage.h"
 #include "PlasticGarbage.h"
+#include "Garbage.h"
+#include "Dustbin.cpp"
+#include <vector>
+
 
 class Dustbin
 {
 public:
-	std::string color;
-	PaperGarbage paperContent[10];
-	PlasticGarbage plasticContent[5];
-	Garbage HouseWasteContent[5];
-
-	Dustbin();
-	void setGarbage(Garbage obj, int);
-	void setPaperGarbage(Garbage obj, int);
-	void setPlasticGarbage(Garbage obj, int);
-	void throwOutGarbage(Garbage waste);
+	std::string color = "grey";
+	std::vector<PaperGarbage> paperContent;
+	std::vector<PlasticGarbage> plasticContent;
+	std::vector<Garbage> houseWasteContent;
+public:
+	Dustbin() = default;
+	void throwOutGarbage(Garbage inputGarbage);
 	void throwOutPaperGarbage(PaperGarbage paperWaste);
-	void throwOutPlasticGarbage(PlasticGarbage plasticWaste);
+	void throwOutPlasticGarbage(PlasticGarbage PlasticWaste);
 	void emptyContents();
 };
-
