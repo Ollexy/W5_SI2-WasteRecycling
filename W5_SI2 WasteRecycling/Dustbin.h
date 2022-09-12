@@ -15,5 +15,9 @@ public:
 	void setGarbage(Garbage obj, int);
 	void setPaperGarbage(Garbage obj, int);
 	void setPlasticGarbage(Garbage obj, int);
+	void throwOutGarbage(Garbage waste);
+	void throwOutPaperGarbage(PaperGarbage paperWaste);
+	void throwOutPlasticGarbage(PlasticGarbage plasticWaste);
+	void emptyContents();
 };
 
